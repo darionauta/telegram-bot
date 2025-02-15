@@ -16,6 +16,10 @@ def send_telegram_message(msg):
     payload = {"chat_id": CHAT_ID, "text": msg}
 
 
+@app.route('/', methods=['GET'])
+def home():
+    return {"version":"0.1"}
+
 @app.route('/gitlab-webhook', methods=['POST'])
 def gitlab_webhook():
     data = request.json

@@ -1,7 +1,7 @@
 version: "3.8"
 
 services:
-  flas-app:
+  flask-app:
     build: .
     ports:
       - "15666:15666"
