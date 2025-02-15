@@ -8,3 +8,9 @@ services:
     environment:
       - FLASK_ENV=development
     restart: always
+    networks:
+      - telegram-bot
+
+networks:
+  telegram-bot:
+    external: true
