@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  flas-app:
+    build: .
+    ports:
+      - "15666:15666"
+    environment:
+      - FLASK_ENV=development
+    restart: always
