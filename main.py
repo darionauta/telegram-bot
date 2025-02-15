@@ -11,7 +11,7 @@ BOT_TOKEN = os.getenv("TOKEN")
 CHAT_ID = os.getenv("CHAT_ID")
 
 
-def send_telegram_message(msg)
+def send_telegram_message(msg):
     url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
     payload = {"chat_id": CHAT_ID, "text": msg}
 
